@@ -5,6 +5,13 @@ A simple chainable, readable object with the intense to make speaking HTTP sane.
 ```bash
 > npm install --save chain-request
 ```
+
+## Usage
+Just include the module and name it, e.g.:
+```javascript
+var request = require('chain-request');
+```
+
 ## Examples
 
 Use the google REST-API
