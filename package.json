@@ -1,0 +1,36 @@
+{
+  "name": "chain-request",
+  "version": "0.0.1",
+  "description": "A simple chainable, readable object with the intense to make speaking HTTP sane.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lotterfriends/chain-request.git"
+  },
+  "keywords": [
+    "chain",
+    "request",
+    "chain of responsibility",
+    "patter",
+    "http",
+    "https",
+    "fileupload",
+    "post",
+    "get",
+    "put",
+    "request"
+  ],
+  "author": "André Tarnowsky <andre@tarnowsky.de> (http://lotterfriends.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lotterfriends/chain-request/issues"
+  },
+  "homepage": "https://github.com/lotterfriends/chain-request#readme",
+  "dependencies": {
+    "mime": "^1.3.4",
+    "querystring": "^0.2.0"
+  }
+}
