@@ -1,6 +1,6 @@
 {
   "name": "chain-request",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple chainable, readable object with the intense to make speaking HTTP sane.",
   "main": "index.js",
   "scripts": {
