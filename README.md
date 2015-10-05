@@ -1,7 +1,52 @@
 # chain-request
 A simple chainable, readable object with the intense to make speaking HTTP sane.
 
-## Api
+## Installation
+```bash
+> npm install --save chain-request
+```
+## Examples
+
+Use the google REST-API
+```javascript
+new request()
+	.get('http://ajax.googleapis.com/ajax/services/search/web')
+	.expects(request.CONTENT_TYPE.JSON)
+	.data({
+		v: '1.0',
+		q: 'test'
+	})
+	.send(function(data) {
+		data.responseData.results.forEach(function(result) {
+			console.log(result);
+		});
+	});
+```
+
+Upload a file with authorization Header
+```javascript
+new request()
+	.post('https://build.phonegap.com/api/v1/apps')
+	.expects(request.CONTENT_TYPE.JSON)
+	.addAuthorizationHeader('Basic: a2Vrc2U6a3VjaGVu')
+	.data('app.zip')
+	.sendMultipart()
+	.send(function(result) {
+		console.log(result);
+	})
+```
+Get a specific jira task
+```javascript
+new request()
+	.get('https://my-jira.tld/rest/api/2/issue/FOO-39')
+	.expects(request.CONTENT_TYPE.JSON)
+	.addAuthorizationHeader('Basic: a2Vrc2U6a3VjaGVu')
+	.send(function(result) {
+		console.log(result);
+	})
+```
+
+## API
 
 ### Functions
 <dl>
