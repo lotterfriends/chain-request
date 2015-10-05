@@ -60,6 +60,27 @@ new request()
 <dt><a href="#Request">Request([debug])</a></dt>
 <dd><p>A simple chainable, readable object with the intense to make speaking HTTP sane.</p>
 </dd>
+<dt><a href="#get">get()</a> ⇒ <code>object</code></dt>
+<dd><p>Make a get request</p>
+</dd>
+<dt><a href="#put">put()</a> ⇒ <code>object</code></dt>
+<dd><p>make a put request</p>
+</dd>
+<dt><a href="#post">post()</a> ⇒ <code>object</code></dt>
+<dd><p>make a post request</p>
+</dd>
+<dt><a href="#patch">patch()</a> ⇒ <code>object</code></dt>
+<dd><p>make a patch request</p>
+</dd>
+<dt><a href="#delete">delete()</a> ⇒ <code>object</code></dt>
+<dd><p>make a delete request</p>
+</dd>
+<dt><a href="#options">options()</a> ⇒ <code>object</code></dt>
+<dd><p>make a options request</p>
+</dd>
+<dt><a href="#head">head()</a> ⇒ <code>object</code></dt>
+<dd><p>make a head request</p>
+</dd>
 <dt><a href="#data">data(data)</a> ⇒ <code>object</code></dt>
 <dd><p>set the data for the request</p>
 </dd>
@@ -103,6 +124,56 @@ A simple chainable, readable object with the intense to make speaking HTTP sane.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [debug] | <code>boolean</code> | <code>false</code> | enable debugging with true |
+
+<a name="get"></a>
+### get() ⇒ <code>object</code>
+make a get request
+
+**Kind**: global function  
+**Returns**: <code>object</code> - self  
+
+<a name="put"></a>
+### put() ⇒ <code>object</code>
+make a put request
+
+**Kind**: global function  
+**Returns**: <code>object</code> - self  
+
+<a name="post"></a>
+### post() ⇒ <code>object</code>
+make a post request
+
+**Kind**: global function  
+**Returns**: <code>object</code> - self  
+
+<a name="patch"></a>
+### patch() ⇒ <code>object</code>
+make a patch request
+
+<a name="delete"></a>
+### delete() ⇒ <code>object</code>
+make a delete request
+
+**Kind**: global function  
+**Returns**: <code>object</code> - self  
+
+<a name="options"></a>
+### options() ⇒ <code>object</code>
+make a options request
+
+**Kind**: global function  
+**Returns**: <code>object</code> - self  
+
+<a name="head"></a>
+### head() ⇒ <code>object</code>
+make a head request
+
+**Kind**: global function  
+**Returns**: <code>object</code> - self  
+
+
+**Kind**: global function  
+**Returns**: <code>object</code> - self  
 
 <a name="data"></a>
 ### data(data) ⇒ <code>object</code>
